@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo IIT.png" alt="" width="150" height="150">
+        <h1> Université Nord Américaine Privée : Institut Internationale de Technologie</h1>
+    </header>
+    <form action=""> 
+        <fieldset>
+            <legend>Inscription Étudiant</legend>
+            <table>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" id="nom" name="nom"></td>
+                </tr>
+                <tr>
+                    <td><label for="prenom">Prénom :</label></td>
+                    <td><input type="text" id="prenom" name="prenom"></td>
+                </tr>
+                <tr>
+                    <td><label for="dn">Date de naissance :</label></td>
+                    <td><input type="date" id="dn" name="dn"></td>
+                </tr>
+                <tr>
+                    <td><label for="sexe">Sexe :</label></td>
+                    <td>
+                        <input type="radio" id="sexe-homme" name="sexe" value="homme">
+                        <label for="sexe-homme">Homme</label>
+                        <input type="radio" id="sexe-femme" name="sexe" value="femme">
+                        <label for="sexe-femme">Femme</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pays">Pays :</label></td>
+                    <td>
+                        <select name="pays" id="pays">
+                            <option value="tunisie" disabled selected>aucun</option>
+                            <option value="tunisie">Tunisie</option>
+                            <option value="france">France</option>
+                            <option value="italie">Angleterre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lg">Langues :</label></td>
+                    <td>
+                        <input type="checkbox" id="francais" name="langue" value="francais">
+                        <label for="francais">Français</label><br>
+                        <input type="checkbox" id="arabe" name="langue" value="arabe">
+                        <label for="arabe">Arabe</label><br>
+                        <input type="checkbox" id="anglais" name="langue" value="anglais">
+                        <label for="anglais">Anglais</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="images">Images :</label></td>
+                    <td><input type="file" id="images" name="images" accept="iamge/jpg"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Valider" id="id_submit" onclick="window.location.href='../index.html'"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <footer>
+        <b>
+        Route M'harza Km1.5, Sfax <br>
+        Tel: +216 74 465 020 <br>
+        MAIL : contact.iit@iit.tn
+       </b>
+    </footer>    
+</body>
+</html>
